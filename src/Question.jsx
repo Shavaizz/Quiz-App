@@ -12,7 +12,7 @@ export default function Question(){
     const [currentIndex, setCurrentIndex]= useState(0);
     const [showAnswer, setShowAnswer] = useState(false);
     const [userInput, setUserInput] = useState("");
-    const [feedback, setFeedback] = useState("");
+    const [feedback, setFeedback] = useState("Answer First Question");
     const [userScore, setScore] = useState(0);
     const handleNextQuestion = () =>{
         setUserInput("")
