@@ -48,3 +48,43 @@ Header Section
     background-color:#5E5F5F ;
     padding: 5px;
 }
+
+/*
+questionAnswerSection
+*/
+
+.questionAnswerSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+#userGuess{
+    display: flex;
+    justify-content: center;
+}
+
+#feedback{
+    display: flex;
+    justify-content: center;
+}
+/*
+buttonsSection
+*/
+
+.buttonsSection{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.buttonsSection button{
+    margin-right: 10px;
+}
+
+#userScore{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

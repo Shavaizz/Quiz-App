@@ -38,14 +38,15 @@ export default function Question(){
     return(
         <>
             <section className="questionAnswerSection">
+                <h2>Question & Answer Section</h2>
                 <div id="questionPortion">
-                    <p id="questionContent">
-                        {questionObj[currentIndex].Question}
-                    </p>
+                    <h3 id="questionContent">
+                        Question:  {questionObj[currentIndex].Question}
+                    </h3>
                 </div>
                 <div id="answerPotion">
                     <p id="answerContent">
-                        {showAnswer ? questionObj[currentIndex].Answer : "The Answer Hasn't Been Revealed Yet, Press the button below to reveal it or take a guess "}
+                    {showAnswer ? questionObj[currentIndex].Answer : "The Answer Hasn't Been Revealed Yet, Press the button below to reveal it or take a guess "}
                     </p>
                 </div>
             </section>
@@ -60,7 +61,7 @@ export default function Question(){
             </div>
             {feedback && (
                 <div id="feedback">
-                    <p>{feedback}</p>
+                    <h4>{feedback}</h4>
                 </div>
             )}
             <section className="buttonsSection">
@@ -70,7 +71,7 @@ export default function Question(){
                 </div>
             </section>
             <div id="userScore">
-               <p>Your Score: {userScore}</p>
+                <h2>Score: {userScore}</h2>
             </div>
         </>
 )
